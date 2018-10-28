@@ -16,7 +16,8 @@ input.addEventListener('keypress', event => {
     }
 
     if (event.keyCode == 13) {
-
+        c = new Date();
+        d = c.getTime();
     }
 });
 
