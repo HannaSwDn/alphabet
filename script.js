@@ -1,6 +1,7 @@
 // DOM variables
 let input = document.getElementById("input");
 let result = document.getElementById("result");
+let nameDiv = document.getElementById("name");
 // global variables
 let alphabet = ['abcdefghijklmnopqrstuvwxyz'];
 let userInput = [];
@@ -10,6 +11,7 @@ let a, b, c, d;
 
 const getName = () => {
     userName = document.getElementById("userName").value;
+    
 }
 
 input.addEventListener('keypress', event => {
