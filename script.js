@@ -9,6 +9,9 @@ let userTime;
 let a, b, c, d;
 
 input.addEventListener('keypress', event => {
-    
+    // we want to start the timer when user presses the a key, because it is the first letter of the alphabet
+    if (event.key == 'a') {
+        
+    }
 });
 
