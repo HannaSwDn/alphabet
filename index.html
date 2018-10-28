@@ -11,23 +11,27 @@
 </head>
 <body>
 
-    <div id="name">
-        <p>Tell me your name please:</p>
-        <input type="text" id="userName">
-        <button onclick="getName()">Go to the test!</button>
+    <div class="wrapper">
+
+        <div id="name">
+            <p>Tell me your name please:</p>
+            <input type="text" id="userName">
+            <button onclick="getName()">Go to the test!</button>
+        </div>
+
+        <h1 id="header1">How fast can you type the alphabet?</h1>
+        <p>The timer will start when you type in the input down below.</p>
+        <p>You must type the letters in the right order, from a - z.</p>
+        <p>When you are done typing, press enter.</p>
+        <p>Good luck!</p>
+
+        <input type="text" id="input" placeholder="type here...">
+
+        <p id="timer">0</p>
+
+        <p id="result">your time will be displayed here</p>
+
     </div>
-
-    <h1 id="header1">How fast can you type the alphabet?</h1>
-    <p>The timer will start when you type in the input down below.</p>
-    <p>You must type the letters in the right order, from a - z.</p>
-    <p>When you are done typing, press enter.</p>
-    <p>Good luck!</p>
-
-    <input type="text" id="input" placeholder="type here...">
-
-    <p id="timer">0</p>
-
-    <p id="result">your time will be displayed here</p>
     
 <!-- JavaScript -->
 <script src="script.js"></script>
