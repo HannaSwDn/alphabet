@@ -1,6 +1,9 @@
 ### I made this to practice commit messages :)
 
 ## It is a test that the user can take to see how fast he can type the whole alphabet.
+How it works:<br>
+When the user types the letter a in the input element, the timer will begin. The user has to type the whole alphabet in the right order, that's why the timer will only start on the letter a.<br>
+When he finished typing and presses enter, the timer will stop and if he has written correctly, it will display how many seconds it took to write the whole alphabet. If you have written incorrectly, you can try again :)
 
 # Problems I had in this project:
 First problem: Writing good commit messages.<br>
