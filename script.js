@@ -7,3 +7,8 @@ let userInput = [];
 let userTime;
 // variables to calculate how long it takes for user to type the whole alphabet
 let a, b, c, d;
+
+input.addEventListener('keypress', event => {
+    
+});
+
