@@ -8,6 +8,7 @@ let timer = document.getElementById("timer");
 let alphabet = ['abcdefghijklmnopqrstuvwxyz'];
 let userInput = [];
 let userTime;
+let myInterval
 // variables to calculate how long it takes for user to type the whole alphabet
 let a, b, c, d;
 
@@ -29,8 +30,10 @@ input.addEventListener('keypress', event => {
     if (event.key == 'a') {
         a = new Date();
         b = a.getTime();
-        setInterval(function(){
-
+        myInterval = setInterval(function(){
+            let x = new Date();
+            let y = x.getTime();
+            timer.innerHTML = Math.abs(b - y);
         }, 10);
     }
 
