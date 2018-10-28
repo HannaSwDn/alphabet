@@ -26,7 +26,7 @@ input.addEventListener('keypress', event => {
         if (userInput == alphabet) {
             result.innerHTML = `You typed the whole alphabet in ${userTime} seconds!`;
         } else {
-            result.innerHTML = `Don't you know the alphabet? Try again...`;
+            result.innerHTML = `Try again ${userName}...`;
         }
         input.value = "";
         userInput = [];
