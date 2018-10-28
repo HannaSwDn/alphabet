@@ -3,6 +3,7 @@ let input = document.getElementById("input");
 let result = document.getElementById("result");
 let nameDiv = document.getElementById("name");
 let header1 = document.getElementById("header1");
+let timer = document.getElementById("timer");
 // global variables
 let alphabet = ['abcdefghijklmnopqrstuvwxyz'];
 let userInput = [];
@@ -29,7 +30,7 @@ input.addEventListener('keypress', event => {
         a = new Date();
         b = a.getTime();
         setInterval(function(){
-            
+
         }, 10);
     }
 
