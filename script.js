@@ -10,11 +10,15 @@ let userTime;
 let a, b, c, d;
 
 const getName = () => {
-    userName = document.getElementById("userName").value;
-    nameDiv.style.opacity = '0';
-    setTimeout(function(){
-        nameDiv.style.display = 'none';
-    }, 500);
+    if (document.getElementById("userName").value == "") {
+        alert('please input your name :)');
+    } else {
+        userName = document.getElementById("userName").value;
+        nameDiv.style.opacity = '0';
+        setTimeout(function(){
+            nameDiv.style.display = 'none';
+        }, 500);
+    }
 }
 
 input.addEventListener('keypress', event => {
@@ -29,10 +33,11 @@ input.addEventListener('keypress', event => {
         userInput = input.value;
         c = new Date();
         d = c.getTime();
-        userTime = Math.abs(b - d);
+        userTime = Math.abs(b - d) / 1000;
         // checks if userInput is equal to alphabet
         if (userInput == alphabet) {
             result.innerHTML = `You typed the whole alphabet in ${userTime} seconds!`;
+            input.placeholder = `Can you beat ${userTime} seconds?`;
         } else {
             result.innerHTML = `Try again ${userName}...`;
         }
