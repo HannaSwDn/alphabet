@@ -21,7 +21,12 @@ input.addEventListener('keypress', event => {
         c = new Date();
         d = c.getTime();
         userTime = Math.abs(b - d);
-        result.innerHTML = `You typed the whole alphabet in ${userTime} seconds!`;
+        // checks if userInput is equal to alphabet
+        if (userInput == alphabet) {
+            result.innerHTML = `You typed the whole alphabet in ${userTime} seconds!`;
+        } else {
+            result.innerHTML = `Don't you know the alphabet? Try again...`;
+        }
         input.value = "";
         userInput = [];
     }
