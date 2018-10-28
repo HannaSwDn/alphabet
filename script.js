@@ -5,9 +5,12 @@ let result = document.getElementById("result");
 let alphabet = ['abcdefghijklmnopqrstuvwxyz'];
 let userInput = [];
 let userTime;
-let userName = document.getElementById("userName");
 // variables to calculate how long it takes for user to type the whole alphabet
 let a, b, c, d;
+
+const getName = () => {
+    userName = document.getElementById("userName").value;
+}
 
 input.addEventListener('keypress', event => {
     // we want to start the timer when user presses the a key, since it is the first letter of the alphabet
