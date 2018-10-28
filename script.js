@@ -16,10 +16,12 @@ input.addEventListener('keypress', event => {
     }
 
     if (event.keyCode == 13) {
+        // setting userInput to the value of input
         userInput = input.value;
         c = new Date();
         d = c.getTime();
         userTime = Math.abs(b - d);
+        result.innerHTML = `You typed the whole alphabet in ${userTime} seconds!`;
         input.value = "";
         userInput = [];
     }
