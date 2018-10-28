@@ -2,7 +2,7 @@
 let input = document.getElementById("input");
 let result = document.getElementById("result");
 let nameDiv = document.getElementById("name");
-let header = document.getElementById("header");
+let header1 = document.getElementById("header1");
 // global variables
 let alphabet = ['abcdefghijklmnopqrstuvwxyz'];
 let userInput = [];
@@ -15,7 +15,7 @@ const getName = () => {
         alert('please input your name :)');
     } else {
         userName = document.getElementById("userName").value;
-        header.innerHTML `How fast can you type the alphabet, ${userName}?`;
+        header1.innerHTML `How fast can you type the alphabet, ${userName}?`;
         nameDiv.style.opacity = '0';
         setTimeout(function(){
             nameDiv.style.display = 'none';
