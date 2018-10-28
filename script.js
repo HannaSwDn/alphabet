@@ -14,7 +14,7 @@ let a, b, c, d;
 
 const getName = () => {
     if (document.getElementById("userName").value == "") {
-        alert('please input your name :)');
+        alert('please enter your name :)');
     } else {
         userName = document.getElementById("userName").value;
         header1.innerHTML = `How fast can you type the alphabet, ${userName}?`;
