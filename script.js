@@ -31,17 +31,16 @@ input.addEventListener('keypress', event => {
         a = new Date();
         b = a.getTime();
         myInterval = setInterval(function(){
-            let x = new Date();
-            let y = x.getTime();
-            timer.innerHTML = Math.abs(b - y);
+            c = new Date();
+            d = c.getTime();
+            timer.innerHTML = Math.abs(b - d);
         }, 10);
     }
 
     if (event.keyCode == 13) {
         // setting userInput to the value of input
+        clearInterval(myInterval);
         userInput = input.value;
-        c = new Date();
-        d = c.getTime();
         userTime = Math.abs(b - d) / 1000;
         // checks if userInput is equal to alphabet
         if (userInput == alphabet) {
