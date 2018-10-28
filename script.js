@@ -11,11 +11,12 @@ let a, b, c, d;
 input.addEventListener('keypress', event => {
     // we want to start the timer when user presses the a key, since it is the first letter of the alphabet
     if (event.key == 'a') {
-        
+        a = new Date();
+        b = a.getTime();
     }
 
     if (event.keyCode == 13) {
-        
+
     }
 });
 
