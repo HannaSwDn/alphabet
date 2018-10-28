@@ -21,5 +21,6 @@ input.addEventListener('keypress', event => {
         d = c.getTime();
         userTime = Math.abs(b - d);
         input.value = "";
+        userInput = [];
     }
 });
