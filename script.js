@@ -20,5 +20,6 @@ input.addEventListener('keypress', event => {
         c = new Date();
         d = c.getTime();
         userTime = Math.abs(b - d);
+        input.value = "";
     }
 });
