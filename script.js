@@ -11,7 +11,7 @@ let a, b, c, d;
 
 const getName = () => {
     userName = document.getElementById("userName").value;
-    
+    nameDiv.style.opacity = '0';
 }
 
 input.addEventListener('keypress', event => {
