@@ -28,6 +28,9 @@ input.addEventListener('keypress', event => {
     if (event.key == 'a') {
         a = new Date();
         b = a.getTime();
+        setInterval(function(){
+            
+        }, 10);
     }
 
     if (event.keyCode == 13) {
