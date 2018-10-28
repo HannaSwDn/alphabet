@@ -15,7 +15,7 @@ const getName = () => {
         alert('please input your name :)');
     } else {
         userName = document.getElementById("userName").value;
-        header1.innerHTML `How fast can you type the alphabet, ${userName}?`;
+        header1.innerHTML = `How fast can you type the alphabet, ${userName}?`;
         nameDiv.style.opacity = '0';
         setTimeout(function(){
             nameDiv.style.display = 'none';
